@@ -1,0 +1,73 @@
+import { Event, Registration } from '../types';
+
+export const MOCK_EVENTS: Event[] = [
+  {
+    id: '1',
+    title: 'Tech Innovation Summit 2024',
+    description: 'Join industry leaders and innovators for a day of cutting-edge technology discussions.',
+    date: '2024-03-15T10:00:00Z',
+    location: 'Main Auditorium',
+    capacity: 200,
+    registeredCount: 45,
+    organizerId: '2',
+    organizerName: 'Jane Smith',
+    status: 'approved',
+    category: 'Technology',
+  },
+  {
+    id: '2',
+    title: 'Career Fair Spring 2024',
+    description: 'Connect with top employers and explore career opportunities across various industries.',
+    date: '2024-03-20T09:00:00Z',
+    location: 'Student Center Hall',
+    capacity: 500,
+    registeredCount: 234,
+    organizerId: '2',
+    organizerName: 'Jane Smith',
+    status: 'approved',
+    category: 'Career',
+  },
+  {
+    id: '3',
+    title: 'Sustainability Workshop',
+    description: 'Learn about sustainable practices and environmental conservation initiatives.',
+    date: '2024-03-25T14:00:00Z',
+    location: 'Green Building Room 201',
+    capacity: 50,
+    registeredCount: 12,
+    organizerId: '2',
+    organizerName: 'Jane Smith',
+    status: 'pending',
+    category: 'Environment',
+  },
+  {
+    id: '4',
+    title: 'Student Art Exhibition',
+    description: 'Showcase of creative works by talented students from various art disciplines.',
+    date: '2024-04-01T18:00:00Z',
+    location: 'Art Gallery',
+    capacity: 100,
+    registeredCount: 78,
+    organizerId: '2',
+    organizerName: 'Jane Smith',
+    status: 'approved',
+    category: 'Arts',
+  },
+];
+
+export const MOCK_REGISTRATIONS: Registration[] = [
+  {
+    id: '1',
+    userId: '1',
+    eventId: '1',
+    registeredAt: '2024-03-01T10:00:00Z',
+    qrCode: 'QR_CODE_DATA_1',
+  },
+  {
+    id: '2',
+    userId: '1',
+    eventId: '2',
+    registeredAt: '2024-03-02T15:30:00Z',
+    qrCode: 'QR_CODE_DATA_2',
+  },
+];
